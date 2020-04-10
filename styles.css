@@ -38,6 +38,17 @@ background-color: red;
 border-top-right-radius: 100%;
 }
 
+.power-modes{
+background-color:rgb(247, 225, 194);
+border-radius: 100%;
+width: 200px;
+height: 200px;
+position: absolute;
+display: inline-block;
+top: 350px;
+left: 310px;
+}
+
 .start-button{
 cursor: pointer;
 }
