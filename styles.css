@@ -1,95 +1,109 @@
 body {
-    background-color:black;
-    text-align: center;
-    font-family: 'Mansalva', cursive;
-    font-size: 50px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
     color: rgb(247, 225, 194);
+	width: 850px;
+	margin: 0 auto;
+    background: black;
+ 
 }
 
-footer{
-text-align: right;
-font-size: 20px;
+h1 {
+text-align: center;
+font-size: 60px;
+color: rgb(247, 225, 194);
+}
+
+.gamecontainer {
+	opacity: 1.0;
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-left: 50px;
+	border-radius: 2px;
+    transition: 0.2s;
+}
+
+.gamecontainer:hover {
+	transform: rotate(5deg) scale(1.1);
+}
+
+.gamecontainer:active {
+	transform: scale(0.9);
+	opacity: 0.1;
+}
+
+.gamecontainer.active {
+	transform: scale(0.9);
+	opacity: 0.1;
+} 
+
+.red {
+    background: rgb(236, 10, 10);
+    
+}
+
+.blue {
+    background: rgb(31, 31, 224);
 
 }
 
-button:hover{
-    /* background-color: cyan; */
+.yellow {
+    background: rgb(230, 230, 132);
+ 
+
+}
+
+.green {
+    background: rgb(143, 238, 143);
+     
+}
+
+.message-banner {
+	margin-top: 50px;
+	width: 100%;
+	height: 30px;
+	float: left;
+	background: black;
+	border-radius: 2px;
+	color: blanchedalmond;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+
+}
+
+div:hover{
     outline: none;
     border-color: cyan;
-    box-shadow: 0 0 90px cyan;
+    box-shadow: 0 0 40px cyan;
 }
 
-.game-container{
-display: inline-block;
-height: 200px;
-width: 200px;
-text-align: center;
-box-shadow: none;
+button {
+	background: black;
+	border-radius: 2px;
+	color:blanchedalmond;
+	line-height: 100px;
+	min-width: 200px;
+	font-weight: bold;
+	text-align: center;
+	border: 0;
+    transition: 0.3s;
 }
 
-
-
-.blue {  
-background-color: rgb(84, 84, 201);
-border-bottom-left-radius: 200%;
+button:active, button:disabled {
+	background: black;
 }
 
-.yellow{
-background-color: rgb(230, 230, 132);
-border-bottom-right-radius: 200%;
+button.red {
+	background: BLACK;
+	color: blanchedalmond;
 }
 
-.green{ 
-background-color:rgb(105, 175, 105);
-border-top-left-radius: 200%;
-}
-
-.red{  
-background-color: rgb(241, 90, 90);
-border-top-right-radius: 200%;
-}
-
-.power-modes{
-position: absolute; visibility: visible; right: 260px; left: 180px; top: 380px; height: 130px; width: 150px; z-index: 200; 
-text-align: center;
-}
-
-.active{
-background-color: white;
-}
-
-.start-button{
-background-color: black;
-color: rgb(247, 225, 194);
-cursor: pointer;
-font-family: 'Mansalva', cursive;
-font-size: 40px;
-border-radius: 50%;
-}
-
-.restart-button{
-background-color: black;
-color: rgb(247, 225, 194);
-cursor: pointer;
-font-family: 'Mansalva', cursive;
-font-size: 40px;
-border-radius: 50%;
-}
-
-.strict-mode{
-background-color: black;
-color: rgb(247, 225, 194);
-cursor: pointer;
-font-family: 'Mansalva', cursive;
-font-size: 40px;
-border-radius: 50%;
-}
-
-.normal-mode{
-background-color: black;
-color: rgb(247, 225, 194);
-cursor: pointer;
-font-family: 'Mansalva', cursive;
-font-size: 40px;
-border-radius: 50%;
+.buttons {
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
 }

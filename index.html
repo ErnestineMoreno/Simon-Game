@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
-    <title>Simon Game</title>
-</head>
-<body>
-<!-- ADD MODALS -->
 
-<h1>Simon</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="audio"
+            href="http://zapsplat.net/zapsplat-sounds/download.php?fileName=zapsplat_multimedia_click_002_19368.mp3">
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <title>Simon Memory Game</title>
+    </head>
 
+    <body>
 
-<div>
-    <button id="2" class="game-container green "></button>
-    <!-- <audio src="DO I WANT TO INSERT AUDIO ON CLICK?"></audio> -->
-    <button id="3" class="game-container red"></button>
-    <!-- <audio src="DO I WANT TO INSERT AUDIO ON CLICK?"></audio>-->
-</div>
+        <header>
+            <h1> S I M O N<br>S A Y S</h1>
+        </header>
 
-<div>
-    <button id="0" class="game-container blue"></button>
-    <!-- <audio src="DO I WANT TO INSERT AUDIO ON CLICK?"></audio>-->         
-    <button id="1" class="game-container yellow"></button>
-    <!-- <audio src="DO I WANT TO INSERT AUDIO ON CLICK?"></audio>-->
-</div>
+        <div class="message-banner" id="prompts">LET'S PLAY!</div>
 
-<div class="power-modes">
-    <button class="start-button">Start</button>
-    <button class="restart-button">Restart</button>
-    <button class="strict-mode">Strict</button>
-    <button class="normal-mode">Normal</button>
-</div>
+        <div class="buttons">
+            <button class="start">START</button>
+            <button class="reset">RESET</button>
+            <button class="strictMode">STRICT MODE: OFF</button>
+        </div>
+
+        <div class="gamecontainer red"></div>
+        <div class="gamecontainer green"></div>
+        <div class="gamecontainer blue"></div>
+        <div class="gamecontainer yellow"></div>
 
 
-<br>
-<br>
-<footer>Ernestine Moreno, 2020</footer>
-
-<script src="app.js"></script>
-</body>
-</html>
+        <br>
+        <script src="app.js" </script>
+</body >
+</html >
