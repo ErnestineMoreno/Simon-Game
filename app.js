@@ -1,5 +1,6 @@
 // console.log('Come stai, Tina?')
 
+//Added mp3 audio for each div
 const effects = [
 new Audio('ErnestineMoreno1zapsplat_multimedia_click_002_19368.mp3'),
 new Audio('ErnestineMoreno1zapsplat_multimedia_click_002_19368.mp3'),
@@ -7,10 +8,11 @@ new Audio('ErnestineMoreno1zapsplat_multimedia_click_002_19368.mp3'),
 new Audio('ErnestineMoreno1zapsplat_multimedia_click_002_19368.mp3')
 ];
 
+//FUNCTION DEFINES HOW EACH AUDIO WILL BE PLAYED ONCE GAME STARTS
 function playSound (audio) {
 effects[audio].play();
 }
-
+//SETTING MY VARIABLES FOR GAMEPLAY LOGIC
 let gamePlay = false;
 let sequence = [];
 let currentSequence = 0;
@@ -22,6 +24,10 @@ let startButton = document.querySelector('.start');
 let resetButton = document.querySelector('.reset');
 let strictButton = document.querySelector('.strictMode');
 
+//INPUT FOR LOOP TO LOOP THROUGH EACH DIV AND PLAY AUDIO ON CLICK ONCE GAME STARTS
+//WILL CONTINUE TO DISPLAY THE NUMBER OF SEQUENCES PLAYER HAS ADVANCED TO UP UNTIL THE 20TH SEQUENCE
+//USED INNERHTML TO PULL PROMPT MESSAGES FOR EACH SEQUENCE
+//SET TIMEOUT INTERVALS 
 for(let i=0; i<gameboard.length; i++) {
 const number = i; 
 gameboard[i].onclick = function() {
