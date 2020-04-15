@@ -15,10 +15,12 @@ Zapslat Multimedia, mp3 audio
 No installation needed. For optimal experience, the game should be rendered using a web browser (preferably Google Chrome or Firefox).
 
 ## Deployment: 
-https://ernestinemoreno.github.io/Simon-Game/
+Hosted by GitHub Pages https://ernestinemoreno.github.io/Simon-Game/
 
 
-## Project Description: [Ernestine Moreno's Simon Memory Game](https://ernestinemoreno.github.io/Simon-Game/)
+## Project Description: 
+[Ernestine Moreno's Simon Memory Game](https://ernestinemoreno.github.io/Simon-Game/)
+
 Based on the popular electronic game from Hasbro. This is a memory game where a sequence of four colors (red, green, blue, yellow) will be played and the player must memorize and click the same color sequence in order to advance to the next level. For each level the player advances to, another color will be added to the sequence.
 
 The player wins once they reach the 20th sequence; if not, the player must continue playing until the current color sequence is correct.
