@@ -105,3 +105,10 @@ button.strict {
     color: cyan;
         cursor: pointer;
 }
+
+footer{
+	font-size: 10px;
+	float: left;
+	margin: auto;
+	text-align: left;
+}
