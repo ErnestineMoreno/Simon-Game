@@ -24,7 +24,7 @@ let startButton = document.querySelector('.start');
 let resetButton = document.querySelector('.reset');
 let strictButton = document.querySelector('.strictMode');
 
-//INPUT FOR LOOP TO LOOP THROUGH EACH DIV AND PLAY AUDIO ON CLICK ONCE GAME STARTS
+//INPUT FOR LOOP TO LOOP THROUGH EACH DIV AND PLAY AUDIO ON CLICK ONCE GAME STARTS AND WHEN PLAYER CLICKS ONE OF THE FOUR BUTTONS
 //WILL CONTINUE TO DISPLAY THE NUMBER OF SEQUENCES PLAYER HAS ADVANCED TO UP UNTIL THE 20TH SEQUENCE
 //USED INNERHTML TO PULL PROMPT MESSAGES FOR EACH SEQUENCE
 //SET TIMEOUT INTERVALS 
@@ -130,14 +130,14 @@ function showSequence() {
 
 		currentSequence++;
 
-		timeout = setTimeout(showSequence, 0.3*1000); 
+		timeout = setTimeout(showSequence, 0.3 * 1000); 
 
 	}, 0.6 * 1000);
 
 	prompts.innerHTML = 'FOCUS';
 }
 
-
+//THIS FUNCTION WILL RANDOMLY FLASH ONE OF THE FOUR BUTTONS
 function rand(min, max) {
 return Math.floor(Math.random() * (max - min + 1)) + min;
 }

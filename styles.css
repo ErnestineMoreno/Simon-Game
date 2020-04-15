@@ -81,12 +81,11 @@ button {
 	border: 0;
     transition: 0.3s;
     cursor: pointer;
-
 }
 
 button:active, button:disabled {
     background: black;
-        cursor: pointer;
+    cursor: pointer;
 }
 
 .buttons {
@@ -96,19 +95,11 @@ button:active, button:disabled {
     text-align: center;
     font-size: 60px;
     box-shadow: none;
-        cursor: pointer;
-
+    cursor: pointer;
 }
 
 button.strict {
 	background: BLACK;
     color: cyan;
         cursor: pointer;
-}
-
-footer{
-	font-size: 10px;
-	float: left;
-	margin: auto;
-	text-align: left;
 }
